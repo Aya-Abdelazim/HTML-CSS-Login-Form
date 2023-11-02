@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+  }
+
+  /* Small Screen  */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+
+  /* Medium Screen */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  /* Larage Screen */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/img.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .wrapper {
+    width: 450px;
+    border: 2px solid #392a13;
+    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    padding: 20px 30px;
+    color: #fff;
+    backdrop-filter: blur(5px);
+  }
+
+  @media (max-width: 767px) {
+    .wrapper {
+      width: 350px
+    }
+  }
+
+  .wrapper h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .wrapper .input {
+    position: relative;
+    margin: 10px 0;
+  }
+
+  .wrapper .input input {
+    background-color: #834a2c;
+    width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    caret-color: #fff;
+  }
+
+  input::placeholder {
+    color: #fff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    font-size: 14px;
+  }
+
+  input:focus::placeholder,
+  .input:focus::placeholder {
+    opacity: 0;
+  }
+
+  .wrapper .input i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    font-size: 14px;
+  }
+
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+    font-size: 14px;
+  }
+
+  .wrapper .remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+  }
+
+  .wrapper .remember-forgot a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .wrapper .remember-forgot a:hover {
+    text-decoration: underline;
+  }
+
+  .wrapper button {
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #834a2c;
+    color: #fff;
+  }
+
+  .wrapper button:hover {
+    background-color: #503a2c;
+  }
+
+  .wrapper .register-link {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 10px 20px;
+    font-size: 14px;
+  }
+
+  .wrapper .register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .wrapper .register-link a:hover {
+    text-decoration: underline;
+  }
